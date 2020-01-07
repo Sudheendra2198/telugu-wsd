@@ -3,7 +3,7 @@
     It will output the result to files
     input_text.txt contains input words
     sans_stop_words.txt contains the input text after removing stop words
-    synset.txt contains the output of matched synset
+    final_output.txt contains the result
 """
 
 import nltk
@@ -21,8 +21,7 @@ from googletrans import Translator
 """ File initializations """
 input_text=open('input_text.txt','w') # Contains the initial input text
 sans_stop_words=open('sans_stop_words.txt','w') # Contains the input text after removing stop words
-synset_output=open('synset.txt','w') # Contains the output of matched synset
-sense_output=open('sense_output.txt','w')
+
 
 """ Sysnet initialization to Telugu"""
 iwn = pyiwn.IndoWordNet(lang=pyiwn.Language.TELUGU)
