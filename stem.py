@@ -30,12 +30,4 @@ def stem_words(words):
     stemmed_words = []
     for word in words:
         stemmed_words.append(stem(word))
-    c = 'అంశంపై'
-    c1 = 'పై'
-    print(c1[1])
-    op = open('output.txt','w')
-    op.write(str(stemmed_words))
     return stemmed_words
-
-if __name__ == "__main__":
-    stem_words(['అంశంపై'])
